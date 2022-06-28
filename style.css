@@ -8,11 +8,9 @@
 }
 
 body {
-  padding: 10px 0px;
-  margin: auto;
   Font-size: 18px;
   width: 100%;
-  height: auto;
+  font-size: 18px;
   font-family: open Sans;
   font-weight: 400, 700;
 }
@@ -20,6 +18,7 @@ body {
 h2 {
   font-family: poppins;
   font-weight: 600;
+  font-size: 24px;
 }
 
 section {
@@ -31,15 +30,11 @@ section {
 
 header {
   background-image: url('bg-hero-desktop.svg');
+  background-color: hsl(193, 100%, 96%);
   background-size: cover;
   background-position: center;
-  position: relative;
-  top: 0;
-  margin-left: 3rem;
-  width: 100%;
   align-items: center;
   margin-bottom: 100px;
-  background-color: hsl(193, 100%, 96%);
 }
 
 .trybtn {
@@ -50,26 +45,22 @@ header {
   cursor: pointer;
   border-radius: 20px;
   border: 1px solid white;
-  text-align: left;
+  text-align: right;
 }
 
-.startbtn {
-  padding: 5px 20px;
-  border-width: 5px;
-  color: white;
-  background-color: hsl(322, 100%, 66%);
-  border-radius: 20px;
-  border: 1px solid hsl(322, 100%, 66%);
-  margin-top: 10px;
-}
-button {
-  transition: width 2s, height 3s;
+.upper,
+.trybtn {
+  display: flex;
+  flex: 50% 50%;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 16px 30px 16px 30px;
 }
 
-button:hover {
-  width: 300px;
-  height: 100px;
+.upper img {
+  margin-top: 30px;
 }
+
 .up {
   width: 100%;
   display: flex;
@@ -77,20 +68,20 @@ button:hover {
   flex-wrap: wrap;
   padding: 16px;
 }
+
 .top {
-  align-content: center;
-  width: 80%;
   display: flex;
   flex: 50%;
   flex-wrap: wrap;
-  padding: 16px;
+  width: 80%;
   border: 1px solid white;
   padding: 10px 10px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  align-content: center;
   box-shadow: 5px 5px 5px 5px hsl(207, 44%, 95%);
- 
+
 }
 
 .left {
@@ -106,15 +97,23 @@ button:hover {
   justify-items: right;
 }
 
-.rude {
-  background-color: hsl(192, 100%, 9%);
-  border-radius: none;
-  width: 100%;
-  display: flex;
-  flex: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: wrap;
+.startbtn {
+  padding: 5px 30px;
+  border-width: 5px;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 20px;
+  border: 1px solid hsl(322, 100%, 66%);
+  margin-top: 10px;
+}
+
+button {
+  transition: width 2s, height 3s;
+}
+
+button:hover {
+  width: 300px;
+  height: 100px;
 }
 
 .ready {
@@ -125,7 +124,7 @@ button:hover {
   text-align: center;
   border-radius: 10px;
   position: relative;
-  top: 8rem;
+  top: 4rem;
   border: 1px solid #fff;
   padding: 20px;
   align-content: center;
@@ -133,36 +132,44 @@ button:hover {
 }
 
 footer {
-  padding: 20px;
+  padding: 10px 70px;
   background-color: hsl(192, 100%, 9%);
   text-align: right;
 }
-ul{
+
+ul {
   list-style: none;
 }
-.nav {
-  padding: 20px;
-  width: 25%;
-  float: left;
-  flex: 25%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  color: white;
-  margin-top: 180px;
 
-} 
+.rude {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: hsl(192, 100%, 9%);
+}
+
 .navv {
-  padding: 20px;
   width: 25%;
-  float: left;
+  flex: 25%;
+  color: white;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.nav {
+  width: 25%;
   flex: 25%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   color: white;
-} 
-.media{
+  margin-top: 150px;
+}
+
+.media {
   float: right;
   color: white;
   border: 1px solid white;
@@ -173,38 +180,88 @@ ul{
   height: 35px;
   margin-right: 5px;
 }
+
 .design {
+  padding: 20px 20px;
+  text-align: center;
   padding: 16px 30px;
   text-decoration: none;
   color: white;
-}
-
-@media screen and (min-width: 1440px) {
-
-  .top,
-  rude {
-    background-color: red;
-  }
-}
-
-@media screen and (max-width: 700px) {
-
-  .top,
-  rude {
-    flex-direction: column;
-    background-color: purple;
-  }
+  flex-direction: column;
 }
 
 @media screen and (max-width: 375px) {
-
-  .top,
-  rude {
-    flex-direction: column;
-    background-color: green;
+  header {
+    padding: 0px;
   }
-  .up{
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .up,
+  .top,
+  .rude {
     display: block;
     text-align: center;
+    width: 100%;
+  }
+  .top {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .up {
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+  }
+
+  .left {
+    padding: 0px 10px;
+    text-align: center;
+    margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-top: 0px;
+  }
+  section {
+    padding: 0px;
+  text-align: left;
+  }
+  .ready {
+    width: 90%;  
+  }  
+  .right {
+    padding: 0px 10px;
+    text-align: center;
+    margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  }
+  .nav {
+    padding: 2px;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .navv {
+    padding: 4px;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .rude {
+    margin-top: 30px;
+  }
+  img{
+    text-align: center;
+    width: 300;
+  }
+  .media{
+    text-align: right;
+    width: 300;
   }
 }
