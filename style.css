@@ -35,6 +35,7 @@ header {
   background-position: center;
   position: relative;
   top: 0;
+  margin-left: 3rem;
   width: 100%;
   align-items: center;
   margin-bottom: 100px;
@@ -149,6 +150,7 @@ ul{
   flex-wrap: wrap;
   color: white;
   margin-top: 180px;
+
 } 
 .navv {
   padding: 20px;
@@ -161,13 +163,15 @@ ul{
   color: white;
 } 
 .media{
-  flex-direction: row;
-  flex-wrap: wrap;
+  float: right;
   color: white;
+  border: 1px solid white;
+  padding: 0.5rem;
   text-decoration: none;
-}
-.media a{
- border: 50%;
+  border-radius: 50%;
+  text-align: center;
+  height: 35px;
+  margin-right: 5px;
 }
 .design {
   padding: 16px 30px;
@@ -198,5 +202,9 @@ ul{
   rude {
     flex-direction: column;
     background-color: green;
+  }
+  .up{
+    display: block;
+    text-align: center;
   }
 }
