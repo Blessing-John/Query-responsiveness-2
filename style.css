@@ -32,6 +32,7 @@ header {
   display: flex;
   margin-top: 30px;
   padding: 16px;
+  justify-content: space-between;
 }
 
 .trybtn {
@@ -40,15 +41,12 @@ header {
   cursor: pointer;
   border-radius: 30px;
   border: 1px solid white;
-  flex: 50%;
   margin-top: 30px;
+  padding: 10px 80px;
 }
-
 .head-img {
-  padding: 20px 20px;
+  padding: 20px;
   width: 20%;
-  flex: 50%;
-  width: 8%;
   margin-top: 30px;
 }
 
@@ -212,7 +210,14 @@ ul {
   height: 35px;
   margin-right: 5px;
 }
-
+.media:hover {
+  color:rgb(245, 5, 101);
+  transition: 0.7s;
+  border: 1px solid rgb(245, 5, 101);
+}
+.design:hover {
+  text-decoration-line: underline;
+}
 @media screen and (max-width: 375px) {
   .up {
     display: block;
@@ -222,6 +227,18 @@ ul {
 
   header {
     margin-bottom: 3px;
+  }
+  .upper {
+
+    padding: 8px;
+    justify-content: space-between;
+  }
+  
+  .trybtn {
+    padding: 10px 40px;
+  }
+  .head-img {
+    width: 50%;
   }
 
   h2 {
