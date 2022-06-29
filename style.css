@@ -9,7 +9,6 @@
 
 body {
   Font-size: 18px;
-  width: 100%;
   font-size: 18px;
   font-family: open Sans;
   font-weight: 400, 700;
@@ -21,48 +20,44 @@ h2 {
   font-size: 24px;
 }
 
-section {
-  padding: 16px;
-  background-color: white;
-  text-align: left;
-  cursor: pointer;
-}
-
 header {
   background-image: url('bg-hero-desktop.svg');
   background-color: hsl(193, 100%, 96%);
   background-size: cover;
   background-position: center;
-  align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+}
+
+.upper {
+  display: flex;
+  margin-top: 30px;
+  padding: 16px;
 }
 
 .trybtn {
   background-color: white;
   color: black;
-  border-width: 5px;
-  padding: 5px 20px;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 30px;
   border: 1px solid white;
-  text-align: right;
+  flex: 50%;
+  margin-top: 30px;
 }
 
-.upper,
-.trybtn {
-  display: flex;
-  flex: 50% 50%;
-  justify-content: space-between;
+.head-img {
+  padding: 20px 20px;
+  width: 20%;
+  flex: 50%;
+  width: 8%;
   margin-top: 30px;
-  padding: 16px 30px 16px 30px;
 }
 
-.upper img {
-  margin-top: 30px;
+.centerr {
+  width: 100%;
+  height: 100%;
 }
 
 .up {
-  width: 100%;
   display: flex;
   flex: 50%;
   flex-wrap: wrap;
@@ -70,18 +65,21 @@ header {
 }
 
 .top {
+  width: 80%;
   display: flex;
   flex: 50%;
   flex-wrap: wrap;
-  width: 80%;
-  border: 1px solid white;
-  padding: 10px 10px;
+  padding: 10px 80px 10px 80px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  align-content: center;
+  border: 1px solid white;
   box-shadow: 5px 5px 5px 5px hsl(207, 44%, 95%);
+}
 
+.center {
+  width: 100%;
+  height: 100%;
 }
 
 .left {
@@ -117,6 +115,7 @@ button:hover {
 }
 
 .ready {
+  cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   align-content: center;
@@ -127,7 +126,7 @@ button:hover {
   top: 4rem;
   border: 1px solid #fff;
   padding: 20px;
-  align-content: center;
+  background-color: white;
   border: 1px solid white;
 }
 
@@ -151,21 +150,54 @@ ul {
   background-color: hsl(192, 100%, 9%);
 }
 
+.cent {
+  width: 4%;
+  margin-top: 20px;
+  padding: 2px;
+}
+
+.centa {
+  width: 30%;
+  margin-top: 20px;
+  padding: 2px;
+}
+
+.design {
+  padding: 16px 30px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  text-align: left;
+  flex-direction: column;
+}
+
 .navv {
   width: 25%;
   flex: 25%;
   color: white;
   text-align: left;
-  margin-top: 30px;
+  margin-top: 100px;
+  padding: 0px 10px 0px 0px;
 }
 
 .nav {
   width: 25%;
   flex: 25%;
   display: flex;
+  flex-wrap: wrap;
+  color: white;
+  text-align: left;
+  margin-top: 150px;
+}
+
+.navvv {
+  width: 25%;
+  flex: 25%;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   color: white;
+  text-align: left;
   margin-top: 150px;
 }
 
@@ -181,87 +213,93 @@ ul {
   margin-right: 5px;
 }
 
-.design {
-  padding: 20px 20px;
-  text-align: center;
-  padding: 16px 30px;
-  text-decoration: none;
-  color: white;
-  flex-direction: column;
-}
-
 @media screen and (max-width: 375px) {
-  header {
+  .up {
+    display: block;
+    width: 100%;
     padding: 0px;
   }
-  h2 {
-    font-size: 30px;
+
+  header {
+    margin-bottom: 3px;
   }
+
+  h2 {
+    font-size: 25px;
+  }
+
   p {
     font-size: 14px;
   }
-  .up,
-  .top,
-  .rude {
-    display: block;
-    text-align: center;
-    width: 100%;
-  }
+
   .top {
+    display: block;
     width: 100%;
     padding: 0px;
     text-align: center;
     margin-bottom: 0px;
   }
-  .up {
-    width: 100%;
-    padding: 4px;
-    text-align: center;
-  }
 
   .left {
-    padding: 0px 10px;
+    width: auto;
+    padding: 20px 20px;
+    justify-items: center;
     text-align: center;
-    margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  margin-top: 0px;
+    align-items: center;
+    margin-top: 2px;
   }
-  section {
-    padding: 0px;
-  text-align: left;
+  .right {
+    width: auto;
+    padding: 20px 20px;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 2px;
   }
   .ready {
-    width: 90%;  
-  }  
-  .right {
-    padding: 0px 10px;
-    text-align: center;
-    margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  }
-  .nav {
-    padding: 2px;
-    width: 100%;
-    text-align: left;
-    margin-top: 10px;
-  }
-  .navv {
-    padding: 4px;
-    width: 100%;
-    text-align: left;
-    margin-top: 10px;
+    width: 90%;
   }
   .rude {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
     margin-top: 30px;
+    text-align: left;
+    margin-top: 50px;
   }
-  img{
-    text-align: center;
-    width: 300;
+  .navv {
+    width: auto;
+    padding: 20px 4px;
+    justify-items: center;
+    text-align: left;
+    margin-top: 2px;
+  }
+  .nav {
+    width: auto;
+    padding: 20px 4px;
+    text-align: left;
+    margin-top: 2px;
+  }
+  .navvv {
+    padding: 1px 4px;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    color: white;
+    text-align: right;
+    margin-top: 2px;
   }
   .media{
-    text-align: right;
-    width: 300;
+    text-align: center;
   }
+  .design{
+    text-align: left;
+    padding: 2px 2px;
+   
+  }
+  footer {
+    padding: 2px 30px;
+    text-align: right;
+  }
+  
 }
